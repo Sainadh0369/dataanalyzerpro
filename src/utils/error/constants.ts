@@ -1,0 +1,20 @@
+// Error code constants
+export const ERROR_CODES = {
+  // Validation errors
+  INVALID_INPUT: 'INVALID_INPUT',
+  INVALID_TYPE: 'INVALID_TYPE',
+  REQUIRED_FIELD: 'REQUIRED_FIELD',
+  INVALID_FORMAT: 'INVALID_FORMAT',
+  
+  // Processing errors
+  PROCESSING_FAILED: 'PROCESSING_FAILED',
+  ANALYSIS_FAILED: 'ANALYSIS_FAILED',
+  ML_FAILED: 'ML_FAILED',
+  NLP_FAILED: 'NLP_FAILED',
+  
+  // System errors
+  INTERNAL_ERROR: 'INTERNAL_ERROR',
+  NETWORK_ERROR: 'NETWORK_ERROR'
+} as const;
+
+export type ErrorCode = keyof typeof ERROR_CODES;
